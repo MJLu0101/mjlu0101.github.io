@@ -11,6 +11,7 @@
     }
     p{
         font-size: 30px;
+        margin:0 10% 0 10%;
         
     }
      .nav{
@@ -37,12 +38,50 @@
     .nav a:hover{
         background-color:rgb(246, 192, 93);
     }
+    .pic{
+        display: flex;
+       white-space: nowrap;
+       overflow-x: auto;
+       width: 100%;
+       height: 300px;
+       box-sizing: border-box;
+    }
+    .pic img{
+        margin-left: 20px;
+        display: inline-block;
+        height: 100%;
+        border-radius: 50px;
+        width: 400px;
+    }
+    .pic::-webkit-scrollbar{
+        height: 10px;
+    }
+    .pic::-webkit-scrollbar-thumb{
+        background-color: #888;
+        border-radius:4px ;
+    }
  </style>
-<body>
+<div>
     <div class="nav">
         <a href="index.html">Main Page</a>
         <a href="page2.html" style="position: relative;left:70%">Introduction</a>
         <a href="page3.html" style="position: relative;left:75%">Hobbies</a>
+    </div>
+    <p style="text-align: center; ">Hi!  I have a range of interests that I enjoy in my free time.  I love playing guitar, drawing, running, and playing badminton.  I’m also a big fan of anime, movies, and games, especially those with deep and meaningful content.</p>
+    <div>
+        <p style="text-align: center;color: rgb(176, 72, 27);">My favorite animes and games</p> 
+        <div class="pic">
+            <div><img src="https://cdn1.epicgames.com/f4a904fcef2447439c35c4e6457f3027/offer/DS_wide-2560x1440-c3d7bbf8ee36dd025610088381a5235a.jpg" alt="death"></div>
+            <div><img src="https://miro.medium.com/v2/resize:fit:2800/0*zB9ZWoPPZ_cJpzf-.jpg" alt=""> </div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQumXvTI32OWIRPRy2cx0F7GIkDkpg-tW3ZxA&s" alt=""> </div>
+            <div><img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABRg_K790LCcpy4g5fvrUA2NyIrsqOrLGWVy7wFOl4SUu18AYtC_AWrPCkRQ4Ir5Nvj91p33NJlpzMQ98U7GrP-kkMUuYsIRfQunHHxB6O9YczR13a6zOH0IO3wDG1-shQ2ayinozuAnO-b4vNIIbMIFewmY-l405ERLQKI3HxieqB74rPvOM6aTdA9L11Aa_eIxtJ_b7xQSY31D0hgcUo6kbKcCaRgGmzAEkBFYa4CxExIpLgKeUDSV9wqdiTKtc7KYF17_4zNRFa6jWj6oyZsgm6rZ1m9l6Au9st_RjE_JkmK8AiZp9lm5eD9jfplYVO5ZYAQkniifTWriwXvCFmelYc27nNrTlnAamInLKdVURbgnunMzo51pfb6TNCyuPHJVmP_BpZDMawFylMCTRUewXTSYID5UXnFDJup75V55hDvRpwW4F0s6EmT-Ou9te3AZoOsiTdA.jpg?r=071" alt=""> </div>
+        </div>
+        <div class="pic">
+            <div><img src="https://www.instagram.com/p/CgnzXTlteL5/" alt="death"></div>
+            <div><img src="https://miro.medium.com/v2/resize:fit:2800/0*zB9ZWoPPZ_cJpzf-.jpg" alt=""> </div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQumXvTI32OWIRPRy2cx0F7GIkDkpg-tW3ZxA&s" alt=""> </div>
+            <div><img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABRg_K790LCcpy4g5fvrUA2NyIrsqOrLGWVy7wFOl4SUu18AYtC_AWrPCkRQ4Ir5Nvj91p33NJlpzMQ98U7GrP-kkMUuYsIRfQunHHxB6O9YczR13a6zOH0IO3wDG1-shQ2ayinozuAnO-b4vNIIbMIFewmY-l405ERLQKI3HxieqB74rPvOM6aTdA9L11Aa_eIxtJ_b7xQSY31D0hgcUo6kbKcCaRgGmzAEkBFYa4CxExIpLgKeUDSV9wqdiTKtc7KYF17_4zNRFa6jWj6oyZsgm6rZ1m9l6Au9st_RjE_JkmK8AiZp9lm5eD9jfplYVO5ZYAQkniifTWriwXvCFmelYc27nNrTlnAamInLKdVURbgnunMzo51pfb6TNCyuPHJVmP_BpZDMawFylMCTRUewXTSYID5UXnFDJup75V55hDvRpwW4F0s6EmT-Ou9te3AZoOsiTdA.jpg?r=071" alt=""> </div>
+        </div>
     </div>
 </body>
 </html>
