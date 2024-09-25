@@ -6,16 +6,19 @@ p{
     font-size: 30px;
     
 }
-    .nav{
+.nav{
+    display: flex;
+    justify-content: flex-start;
     background-color:#af752a;
-    height: 20px;
+    height: 60px;
     width: 100%;
-    padding: 20px;
+    padding: 0 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     border:black;
     border-width: 10px;
     border-style: double;
+    box-sizing: border-box;
 
 }
 .nav a{
@@ -27,12 +30,71 @@ p{
     display: inline-block;
     text-align: center;
 }
+.right-link{
+    display: flex;
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
 .nav a:hover{
     background-color:rgb(246, 192, 93);
 }
 .music{
-    display: block;
+    display: flex;
     background-color: yellowgreen;
     position: fixed;
     bottom: 0%;
+    width: 100%;
+}
+.introduce {
+   display: flex;
+   justify-content: space-between;
+}
+.self-intr{
+    width: 70%;
+}
+.imga{
+    width: 30%;
+}
+.imga img{
+    width: 80%;
+    object-fit: cover;
+}
+
+@media only screen and (min-width:641px) and (max-width:1023px) {
+   .introduce p{
+    font-size: larger;
+   }
+   .introduce h1{
+    font-size: x-large;
+   }
+   .music{
+    width:100% ;
+   }
+   .music p{
+    font-size: larger;
+   }
+   .img{
+    width: 50% !important; 
+   }
+}
+@media only screen and (max-width:640px) {
+    .introduce{
+        width: 100% !important;
+       }
+       .introduce p{
+        font-size: medium;
+       }
+       .introduce h1{
+        font-size: large;
+       }
+       .music{
+        width:100% ;
+       }
+       .music p{
+        font-size: medium;
+       }
+       .img{
+        width: 30% !important; 
+       }
 }
