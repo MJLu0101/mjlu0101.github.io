@@ -119,6 +119,17 @@ li{
     }
 }
 @media only screen and (max-width:640px) {
+    .nav{
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+    .right-link{
+        flex-direction: column;
+        margin-left: 0;
+        gap: 10px;
+    }
     .link{
         
         width: 100%;
@@ -137,5 +148,11 @@ li{
     }
     table li{
         font-size: small !important;
+    }
+    table{
+        flex-direction: column;
+    }
+    table td{
+        width: 100%;
     }
 }
