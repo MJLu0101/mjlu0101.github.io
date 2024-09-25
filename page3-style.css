@@ -33,6 +33,12 @@ p{
     box-sizing: content-box;
     
 }
+.right-link{
+    display: flex;
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
 .nav a:hover{
     background-color:rgb(246, 192, 93);
 }
@@ -58,4 +64,21 @@ p{
 .pic::-webkit-scrollbar-thumb{
     background-color: #888;
     border-radius:4px ;
+}
+@media only screen and (max-width:640px) {
+    .nav{
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+    .right-link{
+        flex-direction: column;
+        margin-left: 0;
+        gap: 10px;
+    }
+    p{
+        font-size: medium;
+    }
+    
 }

@@ -54,10 +54,10 @@ p{
     width: 70%;
 }
 .imga{
-    width: 30%;
+    width: 25%;
 }
 .imga img{
-    width: 80%;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -74,11 +74,23 @@ p{
    .music p{
     font-size: larger;
    }
-   .img{
-    width: 50% !important; 
+   .imga{
+    width: 40% !important; 
    }
+   
 }
 @media only screen and (max-width:640px) {
+    .nav{
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+    .right-link{
+        flex-direction: column;
+        margin-left: 0;
+        gap: 10px;
+    }
     .introduce{
         width: 100% !important;
        }
@@ -94,7 +106,9 @@ p{
        .music p{
         font-size: medium;
        }
-       .img{
+
+       .imga{
         width: 30% !important; 
        }
+
 }
