@@ -1,6 +1,9 @@
 
 body{
     background-color: orange;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
 }
 p{
     font-size: 30px;
@@ -41,14 +44,16 @@ p{
 }
 .music{
     display: flex;
+    justify-content: center;
     background-color: yellowgreen;
-    position: fixed;
-    bottom: 0%;
     width: 100%;
+    margin-top: auto;
 }
 .introduce {
    display: flex;
    justify-content: space-between;
+   flex: 1; 
+   padding: 20px;
 }
 .self-intr{
     width: 70%;
@@ -106,9 +111,18 @@ p{
        .music p{
         font-size: medium;
        }
-
+       .introduce{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+       }
+       .introduce .self-intr{
+        width: 100%;
+       }
        .imga{
-        width: 30% !important; 
+        width: 50%;
+        height: auto;
        }
 
 }
