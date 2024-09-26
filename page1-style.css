@@ -160,5 +160,8 @@ li{
     .bot right-p{
         align-items: center;
     }
+    .bottom-title{
+        text-align: center;
+    }
    
 }
